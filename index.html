@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="card.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Flashcards</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Language Flashcards</h1>
+      </header>
+    
+      <section class="controls">
+        <select id="languageSelect">
+          <option value="" disabled selected>Choose Language</option>
+          <option value="turkish">🇹🇷 Turkish</option>
+          <option value="german">🇩🇪 German</option>
+        </select>
+        <button id="flipBtn">Flip Card</button>
+        <button id="nextBtn">Next</button>
+        <button id="shuffleBtn">Shuffle</button>
+      </section>
+    
+      <div class="flashcard-container">
+        <div class="flashcard" id="flashcard">
+          <div class="front" id="frontText">Word</div>
+          <div class="back" id="backText">Translation</div>
+        </div>
+      </div>
+    
+      <div class="progress">
+        <span id="progressTracker">Card 1/10</span>
+      </div>
+    
+      <div class="bottom-controls">
+        <button id="resetBtn">Reset</button>
+      </div>
+    
+      <div class="add-card-form">
+        <input type="text" id="newWord" placeholder="New Word" />
+        <input type="text" id="newTranslation" placeholder="Translation" />
+        <select id="addLangSelect">
+          <option value="" disabled selected>Choose Language</option>
+          <option value="turkish">Turkish</option>
+          <option value="german">German</option>
+        </select>
+        <button id="addCardBtn">Add Flashcard</button>
+        <button id="removeCardBtn">Remove Flashcard</button>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
